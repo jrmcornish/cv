@@ -1,72 +1,89 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[a4paper,margin=3cm]{geometry}
-\setlength{\tabcolsep}{0em}
-\setlength{\parskip}{10pt}
 
+% Turns off all hyphenation in document
 \usepackage[none]{hyphenat}
 
-\usepackage{amsthm}
-
+% Turn off page numbering (on pages other than first one)
 \pagestyle{empty}
 
-% Fonts used
+% Fonts and symbols
 \usepackage{textcomp}
 \usepackage{tgpagella}
+\usepackage{amsthm}
 
 % No indent before itemizes
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 \setlist[description]{leftmargin=*}
 
+% Decrease/control white space above title
 \usepackage{titling}
 \setlength{\droptitle}{-2cm}
 
-\title{\bfseries \huge Rob Cornish}
-\author{Curriculum Vit\ae}
-\date{}
+% Control length to left of table column
+\setlength{\tabcolsep}{0em}
+% Control length between paragraphs
+\setlength{\parskip}{10pt}
 
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++ }}
 
-\newenvironment{labelledlist}
+% A labelled list (basically an array of rows with form LABEL ITEM)
+\newenvironment{llist}
 	{\renewcommand{\arraystretch}{1.5}\begin{tabular}{p{3cm} p{12cm}}}
 	{\end{tabular}}
 
+%% Date settings for \today
+\usepackage{datetime}
+% Declare a new date format
+\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
+% Indicate that we should actually _use_ this format for \today
+\monthyear
+
+\title{\bfseries \huge Rob Cornish}
+% XXX: Really should be \subtitle, but no easy way to do this..
+\author{Curriculum Vit\ae}
+\date{\today}
+
 \begin{document}
 \maketitle
-\vspace{-6em}
+
+% Suppress page numbering on first page
 \thispagestyle{empty}
-\vspace{3em}
+% Control space between title and first section
+\vspace{-3em}
+
 \section*{Contact details}
-\begin{labelledlist}
+\begin{llist}
 	\textit{Full name} & John Robert Macaulay Cornish \\
 	\textit{Address} & 19 Bath Rd, Glen Iris, VIC, 3146 \\
 	\textit{Date of Birth} & 23rd January, 1992 \\
 	\textit{Telephone} & H: 03 9809 0134 \newline M: 0409 331 882 \\
 	\textit{Email} & \texttt{j.cornish@student.unimelb.edu.au}
-\end{labelledlist}
+\end{llist}
 
 \section*{Education}
-\begin{labelledlist}
+\begin{llist}
 	2009 & VCE ENTER score of 99.55 \\
 	2010-2012 & Commenced Bachelor of Arts, University of Melbourne, majoring in Philosophy and History and Philosophy of Science \\
 	2011-present & Diploma of Mathematical Sciences, University of Melbourne, majoring in Pure Mathematics \\
 	2012-present & Transferred to Bachelor of Science, University of Melbourne, majoring in Electrical Systems. Completion planned for 2013. \\
-\end{labelledlist}
+\end{llist}
 
 \section*{Academic awards}
-\begin{labelledlist}
+\begin{llist}
 	2011 & Hastie Exhibition for ``highest overall results in two Philosophy subjects'' \\
 	2012 & Faculty of Arts Dean's Honours List for 2011
-\end{labelledlist}
+\end{llist}
 
 %\newpage
 %\vspace{6em}
 \section*{Employment}
-\begin{labelledlist}
+\begin{llist}
 	2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
 	2011-present & Lifeguard, Ashburton Pool and Recreation Center \\
-\end{labelledlist}
+\end{llist}
 
 \section*{Computer Skills}
 \begin{itemize}
