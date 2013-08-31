@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,margin=3cm]{geometry}
+\setlength{\tabcolsep}{0em}
+\setlength{\parskip}{10pt}
+
+\usepackage[none]{hyphenat}
+
+\usepackage{amsthm}
+
+\pagestyle{empty}
+
+% Fonts used
+\usepackage{textcomp}
+\usepackage{tgpagella}
+
+% No indent before itemizes
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\setlist[description]{leftmargin=*}
+
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+
+\title{\bfseries \huge Rob Cornish}
+\author{Curriculum Vit\ae}
+\date{}
+
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++ }}
+
+\newenvironment{labelledlist}
+	{\renewcommand{\arraystretch}{1.5}\begin{tabular}{p{3cm} p{12cm}}}
+	{\end{tabular}}
+
+\begin{document}
+\maketitle
+\vspace{-6em}
+\thispagestyle{empty}
+\vspace{3em}
+\section*{Contact details}
+\begin{labelledlist}
+	\textit{Full name} & John Robert Macaulay Cornish \\
+	\textit{Address} & 19 Bath Rd, Glen Iris, VIC, 3146 \\
+	\textit{Date of Birth} & 23rd January, 1992 \\
+	\textit{Telephone} & H: 03 9809 0134 \newline M: 0409 331 882 \\
+	\textit{Email} & \texttt{j.cornish@student.unimelb.edu.au}
+\end{labelledlist}
+
+\section*{Education}
+\begin{labelledlist}
+	2009 & VCE ENTER score of 99.55 \\
+	2010-2012 & Commenced Bachelor of Arts, University of Melbourne, majoring in Philosophy and History and Philosophy of Science \\
+	2011-present & Diploma of Mathematical Sciences, University of Melbourne, majoring in Pure Mathematics \\
+	2012-present & Transferred to Bachelor of Science, University of Melbourne, majoring in Electrical Systems. Completion planned for 2013. \\
+\end{labelledlist}
+
+\section*{Academic awards}
+\begin{labelledlist}
+	2011 & Hastie Exhibition for ``highest overall results in two Philosophy subjects'' \\
+	2012 & Faculty of Arts Dean's Honours List for 2011
+\end{labelledlist}
+
+%\newpage
+%\vspace{6em}
+\section*{Employment}
+\begin{labelledlist}
+	2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
+	2011-present & Lifeguard, Ashburton Pool and Recreation Center \\
+\end{labelledlist}
+
+\section*{Computer Skills}
+\begin{itemize}
+	\item Proficient programming skills in Python, C and Scheme. Familiar with {\CPP} and Javascript.
+	\item Proficient with {\LaTeX} and HTML.
+	\item Proficient with GNU/Linux environment, including command line tools and Bash scripting.
+\end{itemize}
+
+\hfill \qedsymbol
+\end{document}
