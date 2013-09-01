@@ -26,6 +26,12 @@
 % Control length between paragraphs
 \setlength{\parskip}{10pt}
 
+% Email addresses as hyperlinks (via `\mailto')
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+\usepackage{url}
+\newcommand{\mailto}[1]{\href{mailto:#1}{\url{#1}} }
+
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++ }}
 
@@ -106,25 +112,25 @@
 
 \pagebreak
 \section*{References}
-(Please find letters of recommendation uploaded separately.)
+Please find attached letters of recommendation from the following people: \\ \\
 
 \noindent
 A/Prof. Harald S\o ndergaard  \\
 Department of Computing and Information Systems \\
 The University of Melbourne \\
-Email: \texttt{harald@unimelb.edu.au} \\
+Email: \mailto{harald@unimelb.edu.au} \\
 
 \noindent
 A/Prof. Jan De Gier \\
 Department of Mathematics and Statistics\\
 The University of Melbourne \\
-Email: \texttt{jdgier@unimelb.edu.au} \\
+Email: \mailto{jdgier@unimelb.edu.au} \\
 
 \noindent
 A/Prof. Michael Cantoni \\
 Department of Electrical and Electronic Engineering \\
 The University of Melbourne \\
-Email: \texttt{cantoni@unimelb.edu.au}
+Email: \mailto{cantoni@unimelb.edu.au}
 
 \hfill \qedsymbol
 \end{document}
