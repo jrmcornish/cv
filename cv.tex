@@ -30,17 +30,18 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks,urlcolor=blue}
 \usepackage{url}
-\newcommand{\mailto}[1]{\href{mailto:#1}{\url{#1}} }
+\newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
 
 \usepackage{pdfpages}
 
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++ }}
 
+\usepackage{longtable}
 % A labelled list (basically an array of rows with form LABEL ITEM)
 \newenvironment{llist}
-	{\renewcommand{\arraystretch}{1.5}\begin{tabular}{p{3cm} p{12cm}}}
-	{\end{tabular}}
+	{\renewcommand{\arraystretch}{1.5}\begin{longtable}{p{3.5cm} p{12cm}}}
+	{\end{longtable}}
 
 %% Date settings for \today
 \usepackage{datetime}
@@ -67,24 +68,71 @@
 	\textit{Full name} & John Robert Macaulay Cornish \\
 	\textit{Address} & 19 Bath Rd, Glen Iris, VIC, 3146 \\
 	\textit{Date of Birth} & 23rd January, 1992 \\
-	\textit{Telephone} & H: 03 9809 0134 \newline M: 0409 331 882 \\
-	\textit{Email} & \texttt{j.cornish@student.unimelb.edu.au}
+	\textit{Telephone} & H: +61 3 9809 0134 \newline M: +61 409 331 882 \\
+	\textit{Email} & \mailto{rob.cornish@monash.edu}
 \end{llist}
 
 \section*{Education}
+
 \begin{llist}
+  2014-present & Bachelor of Science (Honours) in Mathematics and Statistics,
+  majoring in Applied Mathematics. Current GPA: 3.75/4 \\ 
   2012-2014 & Bachelor of Science, University of Melbourne, majoring in
   Electrical Systems. Final GPA: 85/100 (First Class Honours) \\
   2011-2014 & Diploma of Mathematical Sciences, University of Melbourne,
   majoring in Pure Mathematics. Final GPA: 88/100 (First Class Honours) \\
   2010-2012 & Bachelor of Arts, University of Melbourne, majoring in Philosophy
-  and History and Philosophy of Science. (Did not complete -- transferred to
-  BSc in 2012.) \\
-	2009 & VCE ENTER score of 99.55 \\
+  and History and Philosophy of Science. (Transferred to BSc in 2012.) \\
+	2009 & VCE ENTER (tertiary entrance) percentile ranking of 99.55 \\
+\end{llist}
+
+\section*{Research experience}
+
+\begin{itemize}
+  \item June 2014-present --- Monash University Honours research project:
+    Detection and Tracking of Surface Primitives in RGBD Data. Supervisors:
+    Prof. Tom Drummond, Dr. Norman Do.
+
+  \item Dec. 2013-Mar. 2014 --- Research assistant at CSIRO's Queensland Center
+    for Advanced Technologies (QCAT). Primary research topic: robotic
+    deployment of the HeatWave thermography device. Supervisor: Dr. Peyman
+    Moghadam.
+
+  \item Dec. 2012-Sept. 2014 --- Research assistant with Optimization and
+    Programming Languages Research Group at The University of Melbourne.
+    Primary research topic: analysis and verification of array manipulating
+    programs, leading to the conference paper detailed below. Supervisor:
+    A/Prof. Harald S\o ndergaard.
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}
+  \item "Analyzing array manipulating programs by program transformation", J.
+    Robert M.  Cornish, Graeme Gange, Jorge A. Navas, Peter Schachte, Harald
+    S\o ndergaard and Peter J. Stuckey.
+    
+    I was the sole presenter of this work at the 2014 LOPSTR conference in
+    Canterbury, UK. Our paper has been accepted for forthcoming publication in
+    the formal LOPSTR post-conference proceedings, which will appear in the
+    Springer LNCS series. (It has already appeared in the informal LOPSTR
+    pre-proceedings.)
+\end{itemize}
+
+%\newpage
+%\vspace{6em}
+\section*{Teaching experience and other employment}
+\begin{llist}
+  July 2014-present & Mathematics tutor, Monash University \\
+	2011-2014 & Lifeguard, Ashburton Pool and Recreation Center \\
+	2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
 \end{llist}
 
 \section*{Academic awards and achievements}
+
 \begin{llist}
+  2015 & Awarded travel grant to attend AMSI Summer School in the Mathematical
+         Sciences, University of Newcastle, NSW for January 2015. \\
   2014 & Monash Mathematical Sciences Honours Scholarship \\
   2013 & Selected for CSIRO (QLD) Computational Infomatics Vacation Scholarship
          program \textit{(Accepted)} \newline \newline
@@ -92,7 +140,8 @@
          Scholarship program \textit{(Declined)}\newline \newline
          Selected for the Melbourne University Department of Mathematics and
          Statistics' Vacation Scholarship program \textit{(Declined)} \newline \newline
-         Winner of MUECC SumoRobo Competition \\
+         Winner of Melbourne University Electrical Engineering Club (MUEEC)
+         SumoRobo Competition \\
 	2012 & Faculty of Arts Dean's Honours List for 2011 \newline \newline
          Selected for the Melbourne School of Engineering's Summer Research
          Experience program \textit{(Accepted)} \newline \newline
@@ -101,34 +150,35 @@
 	2011 & Hastie Exhibition for ``highest overall results in two Philosophy subjects''
 \end{llist}
 
-%\newpage
-%\vspace{6em}
-\section*{Employment}
-\begin{llist}
-  2014 & Mathematics tutor, Monash University \\
-  2013-2014 & Research assistant at CSIRO's Queensland Center for Advanced
-  Technologies. Main research topic: robotic deployment of the HeatWave
-  thermography device. \\
-  2012-2014 & Research assistant with Optimization and Programming Languages
-  Research Group (University of Melbourne). Main research topic: a program
-  transformation for array manipulating programs. \\
-	2011-2014 & Lifeguard, Ashburton Pool and Recreation Center \\
-	2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
-\end{llist}
-
 \section*{Technical Skills}
 \begin{itemize}
-  \item Strong programming skills in C/\CPP, Python, Ruby, Bash, MATLAB,
-    Perl. Working knowledge of Lisp, Javascript, PHP. 
-  \item Proficient with Robot Operating System (ROS).
+  \item Strong programming skills in C/\CPP and Python -- I have used both
+    extensively as part of all research positions listed above.
+
+    Also very proficient in Ruby, Bash, MATLAB, and Perl. Working knowledge of
+    R, Lisp, Javascript, PHP, and probably some others.
+  \item Proficient with Robot Operating System (ROS) -- this featured heavily
+    in my research project at CSIRO's QCAT.
+  \item Proficient with the LLVM Compiler Infrastructure Project -- I
+    implemented our array transformation paper in this framework via its \CPP
+    API.
 	\item Proficient with {\LaTeX} and XML/HTML.
   \item Proficient with Unix environment (Arch Linux user).
   \item Proficient with using version control tools (Git and Subversion in
     particular).
 \end{itemize}
 
+\pagebreak
+
 \section*{References}
-The following individuals have supervised me in prior research work: \\
+The following referees have supervised me in current and prior research work
+and can be contacted for further information: \\
+
+\noindent
+Prof. Tom Drummond  \\
+Department of Electrical and Computer Systems Engineering \\
+Monash University \\
+Email: \mailto{tom.drummond@monash.edu} \\
 
 \noindent
 A/Prof. Harald S\o ndergaard  \\
@@ -137,10 +187,10 @@ The University of Melbourne \\
 Email: \mailto{harald@unimelb.edu.au} \\
 
 \noindent
-Dr. Peyman Moghadam \\
-Queensland Centre for Advanced Technologies (QCAT) \\
-CSIRO \\
-Email: \mailto{Peyman.Moghadam@csiro.au} \\
+Dr. Norman Do \\
+School of Mathematical Sciences \\
+Monash University \\
+Email: \mailto{norm.do@monash.edu} \\
 
 
 \end{document}
