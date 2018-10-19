@@ -27,10 +27,11 @@
 \setlength{\parskip}{10pt}
 
 % Email addresses as hyperlinks (via `\mailto')
-\usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=blue}
-\usepackage{url}
-\newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
+%\usepackage{hyperref}
+%\hypersetup{colorlinks,urlcolor=blue}
+%\usepackage{url}
+%\newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailto}[1]{\texttt{#1}}
 
 \usepackage{pdfpages}
 
@@ -50,6 +51,8 @@
 % Indicate that we should actually _use_ this format for \today
 \monthyear
 
+\usepackage{bibentry}
+
 \title{\bfseries \huge Rob Cornish}
 % XXX: Really should be \subtitle, but no easy way to do this..
 \author{Curriculum Vit\ae}
@@ -57,6 +60,8 @@
 
 \begin{document}
 \maketitle
+\nobibliography{main}
+\bibliographystyle{unsrt}
 
 % Suppress page numbering on first page
 \thispagestyle{empty}
@@ -102,32 +107,26 @@
   \item Dec. 2012-Sept. 2014 --- Research assistant with Optimization and
     Programming Languages Research Group at The University of Melbourne.
     Primary research topic: analysis and verification of array manipulating
-    programs, leading to the conference paper detailed below. Supervisor:
-    A/Prof. Harald S\o ndergaard.
+    programs. Supervisor: A/Prof. Harald S\o ndergaard.
 \end{itemize}
 
 \section*{Publications}
 
+\subsection*{Conference}
+
 \begin{itemize}
-  \item "Analyzing array manipulating programs by program transformation", J.
-    Robert M.  Cornish, Graeme Gange, Jorge A. Navas, Peter Schachte, Harald
-    S\o ndergaard and Peter J. Stuckey.
-    
-    I was the sole presenter of this work at the 2014 LOPSTR conference in
-    Canterbury, UK. Our paper has been accepted for forthcoming publication in
-    the formal LOPSTR post-conference proceedings, which will appear in the
-    Springer LNCS series. (It has already appeared in the informal LOPSTR
-    pre-proceedings.)
+  \item \bibentry{baydin-2018-hypergradient}
+  \item \bibentry{rainforth2018nesting}
+  \item \bibentry{cornish2014analyzing}
 \end{itemize}
 
-%\newpage
-%\vspace{6em}
-\section*{Teaching experience and other employment}
-\begin{llist}
-  July 2014-present & Mathematics tutor, Monash University \\
-  2011-2014 & Lifeguard, Ashburton Pool and Recreation Center \\
-  2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
-\end{llist}
+\subsection*{Workshop}
+
+\begin{itemize}
+  \item \bibentry{cornish2017efficient}
+  \item \bibentry{cornish2017towards}
+  \item \bibentry{rainforth2016nestedmc}
+\end{itemize}
 
 \section*{Academic awards and achievements}
 
@@ -161,8 +160,9 @@
   \item Strong programming skills in C/\CPP and Python -- I have used both
     extensively as part of all research positions listed above.
 
-    Also very proficient in Ruby, Bash, MATLAB, and Perl. Working knowledge of
-    R, Lisp, Javascript, PHP, and probably some others.
+    Also very proficient in Ruby, Bash, MATLAB, and Perl. Working knowledge of (at least)
+    R, Lisp, Javascript, PHP.
+  \item Proficient with Tensorflow and Pytorch.
   \item Proficient with Robot Operating System (ROS) -- this featured heavily
     in my research project at CSIRO's QCAT.
   \item Proficient with the LLVM Compiler Infrastructure Project -- I
@@ -174,7 +174,14 @@
     particular).
 \end{itemize}
 
-\pagebreak
+%\newpage
+%\vspace{6em}
+\section*{Teaching experience and other employment}
+\begin{llist}
+  July 2014-present & Mathematics tutor, Monash University \\
+  2011-2014 & Lifeguard, Ashburton Pool and Recreation Center \\
+  2010-2011 & Swimming instructor, Ashburton Pool and Recreation Center \\
+\end{llist}
 
 \section*{References}
 The following referees have supervised me in current and prior research work
@@ -196,7 +203,7 @@ Email: \mailto{harald@unimelb.edu.au} \\
 Dr. Norman Do \\
 School of Mathematical Sciences \\
 Monash University \\
-Email: \mailto{norm.do@monash.edu} \\
+Email: \mailto{norm.do@monash.edu}
 
 
 \end{document}
