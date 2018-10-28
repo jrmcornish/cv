@@ -17,3 +17,4 @@
 *.toc
 *.bcf
 !fig/*.pdf
+*.sw[op]
