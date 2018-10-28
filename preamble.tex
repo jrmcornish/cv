@@ -14,10 +14,6 @@
 \setlist[itemize]{leftmargin=*}
 \setlist[description]{leftmargin=*}
 
-% Decrease/control white space above title
-\usepackage{titling}
-\setlength{\droptitle}{-2cm}
-
 % Control length to left of table column
 \setlength{\tabcolsep}{0em}
 % Control length between paragraphs
@@ -40,13 +36,6 @@
 \newenvironment{llist}
   {\renewcommand{\arraystretch}{1.5}\begin{longtable}{p{3.5cm} p{12cm}}}
   {\end{longtable}}
-
-%% Date settings for \today
-\usepackage{datetime}
-% Declare a new date format
-\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
-% Indicate that we should actually _use_ this format for \today
-\monthyear
 
 \usepackage{bibentry}
 

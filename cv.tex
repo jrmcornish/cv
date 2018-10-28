@@ -3,6 +3,17 @@
 
 \input{preamble}
 
+% Decrease/control white space above title
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+
+%% Date settings for \today
+\usepackage{datetime}
+% Declare a new date format
+\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
+% Indicate that we should actually _use_ this format for \today
+\monthyear
+
 \title{\bfseries \huge Rob Cornish}
 % XXX: Really should be \subtitle, but no easy way to do this..
 \author{Curriculum Vitae}
