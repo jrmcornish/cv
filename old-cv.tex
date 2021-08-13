@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,margin=3cm]{geometry}
+
+\input{preamble}
+
+% Decrease/control white space above title
+\usepackage{titling}
+\setlength{\droptitle}{-2cm}
+
+%% Date settings for \today
+\usepackage{datetime}
+% Declare a new date format
+\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
+% Indicate that we should actually _use_ this format for \today
+\monthyear
+
+\title{\bfseries \huge Rob Cornish}
+% XXX: Really should be \subtitle, but no easy way to do this..
+\author{Curriculum Vitae}
+\date{\today}
+
+\begin{document}
+\maketitle
+\nobibliography{main}
+\bibliographystyle{unsrt}
+
+% Suppress page numbering on first page
+\thispagestyle{empty}
+% Control space between title and first section
+%%\vspace{3em}
+
+%\section*{Contact details}
+\begin{llist}
+  \textit{Full name} & John Robert Macaulay Cornish \\
+  \textit{Address} & 13 Vicarage Road, Oxford, OX14RB, United Kingdom\\
+  \textit{Date of Birth} & 23rd January, 1992 \\
+  \textit{Telephone} & +44 7908 000 873 \\
+  \textit{Email} & \mailto{rcornish@robots.ox.ac.uk}
+\end{llist}
+
+\section*{Education}
+
+\begin{llist}
+  2015-2020 & CDT DPhil in Autonomous Intelligent Machines and Systems, University of
+  Oxford. \textit{Supervisors:} Arnaud Doucet and George Deligiannidis. \\
+  2014-2015 & Bachelor of Science (Honours) in Mathematics and Statistics, Monash University,
+  majoring in Applied Mathematics. GPA: 4.0/4.0 (First Class Honours) \\ 
+  2012-2014 & Bachelor of Science, University of Melbourne, majoring in
+  Electrical Systems. GPA: 86/100 (First Class Honours) \\
+  2011-2014 & Diploma of Mathematical Sciences, University of Melbourne,
+  majoring in Pure Mathematics. GPA: 88/100 (First Class Honours) \\
+  2010-2012 & Bachelor of Arts, University of Melbourne, double majoring in Philosophy,
+  and History and Philosophy of Science. (Transferred to BSc in 2012.) \\
+  2009 & VCE ENTER (tertiary entrance for Victoria, Australia) percentile ranking of 99.55
+\end{llist}
+
+\section*{Experience}
+\begin{llist}
+  2020-present & Postdoctoral Research Assistant in Causal Inference and Causal Machine Learning for Health, Department of Statistics, University of Oxford.  \textit{Supervisors:} Chris Holmes and Arnaud Doucet \\
+  2018-present & Co-founder \& CTO, Quro Medical -- a South African digital health startup pioneering premium hospital-at-home services in Southern Africa. \url{www.quromedical.co.za} \\
+  2014-2015 & Mathematics tutor, Monash University \\
+  2014-2015 & Monash University Honours research project. \textit{Topic:}
+  Detection and Tracking of Surface Primitives in RGBD Data. \textit{Supervisors:}
+    Prof. Tom Drummond, Dr. Norman Do. \\
+  2013-2014 (summer) & Research assistant at CSIRO's Queensland Center
+    for Advanced Technologies (QCAT). \textit{Topic:} robotic deployment of the HeatWave
+    thermography device. \textit{Supervisor:} Dr. Peyman Moghadam. \\
+  2012-2014 & Research assistant with Optimization and Programming Languages Research
+    Group at The University of Melbourne. \textit{Topic:} analysis and verification of
+    array manipulating programs.  \textit{Supervisor:} A/Prof. Harald S\o ndergaard.
+\end{llist}
+
+\section*{Academic publications}
+
+Copies of each of the following papers can be found at \\
+\url{http://www.robots.ox.ac.uk/\textasciitilde rcornish/}.
+
+\subsection*{Conference}
+
+\noindent
+\textbf{Relaxing Bijectivity Constraints with Continuously Indexed Normalising Flows} \\
+\underline{Rob Cornish}, Anthony L. Caterini, George Deligiannidis, Arnaud Doucet \\
+\textit{International Conference on Machine Learning (ICML), 2020}
+
+\noindent
+\textbf{Scalable Metropolis-Hastings for Exact Bayesian Inference with Large Datasets} \\
+\underline{Rob Cornish}, Paul Vanetti, Alexandre Bouchard-C\^ot\'e, George Deligiannidis, Arnaud Doucet \\
+\textit{International Conference on Machine Learning (ICML), 2019}
+
+\noindent
+\textbf{Online Learning Rate Adaptation with Hypergradient Descent} \\
+At\i l\i m G\"une\c s Baydin, \underline{Rob Cornish}, David Rubio, Mark Schmidt, Frank Wood \\
+\textit{International Conference on Learning Representations (ICLR), 2018}
+
+\noindent
+\textbf{On Nesting Monte Carlo Estimators} \\
+Tom Rainforth, \underline{Rob Cornish}, Hongseok Yang, Andrew Warrington, Frank Wood \\
+\textit{International Conference on Machine Learning (ICML), 2018}
+
+\noindent
+\textbf{Analyzing Array Manipulating Programs by Program Transformation} \\
+\underline{Rob Cornish}, Graeme Gange, Jorge Navas, Peter Schachte, Harald S\o ndergaard, Peter Stuckey \\
+\textit{Logic-Based Program Synthesis and Transformation: Proceedings of the 24th International Symposium, 2015}
+
+
+\subsection*{Workshop}
+
+\textbf{Robust Out-of-Sample Uncertainty for Neural Networks via Confidence Densities} \\
+\underline{Rob Cornish}, George Deligiannidis, Arnaud Doucet \\
+\textit{ICML workshop on Uncertainty and Robustness in Deep Learning, 2019}
+
+\noindent
+\textbf{Towards a testable notion of generalisation for generative adversarial networks} \\
+\underline{Rob Cornish}, Frank Wood, Honseok Yang \\
+\textit{NIPS workshop on Deep Learning: Bridging Theory and Practice, 2017}
+
+\noindent
+\textbf{Efficient exact inference in discrete Anglican programs} \\
+\underline{Rob Cornish}, Frank Wood, Hongseok Yang \\
+\textit{POPL workshop on Probabilistic Programming Semantics (PPS), 2017}
+
+\noindent
+\textbf{On the Pitfalls of Nested Monte Carlo} \\
+Tom Rainforth, \underline{Rob Cornish}, Hongseok Yang, Frank Wood \\
+\textit{NIPS Workshop on Advances in Approximate Bayesian Inference, 2016}
+
+\section*{Awards and achievements}
+
+\begin{llist}
+  2020 & Offered position on September cohort of Entrepreneur First \textit{(Declined in
+         order to continue working on Quro Medical)} \\
+  2016 & Carl Moppert Prize in Mathematics from the School of Mathematical Sciences at
+         Monash University for ``best overall honours student in the school'' \\
+  2015 & Awarded travel grant to attend AMSI Summer School in the Mathematical
+         Sciences, University of Newcastle, NSW for January 2015. \\
+  2014 & Monash Mathematical Sciences Honours Scholarship \newline \newline
+         John Monash Exhibition Prize from the University of Melbourne for ``best overall
+         performance in third-year undergraduate Electrical Engineering subjects'' \\
+  2013 & Selected for CSIRO (QLD) Computational Infomatics Vacation Scholarship
+         program \textit{(Accepted)} \newline \newline
+         Selected for CSIRO (NSW) Astronomy and Space Science Vacation
+         Scholarship program \textit{(Declined)}\newline \newline
+         Selected for the Melbourne University Department of Mathematics and
+         Statistics' Vacation Scholarship program \textit{(Declined)} \newline \newline
+         Winner of Melbourne University Electrical Engineering Club (MUEEC)
+         SumoRobo Competition \\
+  2012 & Faculty of Arts Dean's Honours List for 2011 \newline \newline
+         Selected for the Melbourne School of Engineering's Summer Research
+         Experience program \textit{(Accepted)} \newline \newline
+         Selected for the Melbourne University Department of Mathematics and
+         Statistics' Vacation Scholarship program \textit{(Declined)} \\
+  2011 & Hastie Exhibition from the University of Melbourne for ``highest overall results in two
+         Philosophy subjects''
+\end{llist}
+
+\section*{Technical Skills}
+I am proficient in the following:
+\begin{itemize}
+  \item Programming languages:
+  \begin{itemize}
+    \item \textit{Strong:} Python, C/\CPP, Ruby, Javascript, Bash
+    \item \textit{Working knowledge:} MATLAB, R, Clojure/Lisp, PHP, Perl
+  \end{itemize}
+  \item Machine learning frameworks, especially Pytorch, Tensorflow, Scikit-learn
+  \item Cloud computing, especially Amazon Web Services
+  \item Probabilistic programming systems, especially Anglican
+  \item {\LaTeX}
+  \item Linux/Unix environment
+  \item Version control tools, especially Git and Subversion
+  \item Robot Operating System (ROS)
+  \item LLVM Compiler Infrastructure Project
+\end{itemize}
+
+\end{document}
