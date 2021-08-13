@@ -1,6 +1,6 @@
 OUTEXT := pdf
 SYNCTEX := 1
-FILES := cv.tex cover-letter.tex
+FILES := RobCornishCV.tex cover-letter.tex
 
 LATEX_FLAGS := -file-line-error -synctex=$(SYNCTEX)
 
