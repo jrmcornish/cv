@@ -6,6 +6,7 @@
   Unit, December 2021
 * Causal Falsification of Digital Twins, Cambridge CSML group, April 2022
 * An Introduction to Categorical Probability Theory, D^2 reading group, June 2022
+* Causal Falsification of Digital Twins, GSK meeting, October 2022
 
 ## Reviews
 
