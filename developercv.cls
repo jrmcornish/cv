@@ -208,7 +208,8 @@
 	&\parbox[t]{0.85\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
 		\hfill% Horizontal whitespace
-		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
+		% {\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
+		{\small \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
 		#4 % Entry description text
 	}\\\\}
 
@@ -224,6 +225,23 @@
 		#2\\
 		\textit{#3} % Entry description text
 	}\\\\}
+
+% \newcommand{\publicationalt}[3]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
+% 	% \parbox[t]{0.175\textwidth}{% 17.5% of the text width of the page
+% 	% 	#1 % Leftmost entry date(s) text
+% 	% }%
+% 	\tightspace
+% 	\parbox[t]{\textwidth}{% 82.5% of the text width of the page
+% 		\textbf{#1}% Entry heading text
+% 		\hfill% Horizontal whitespace
+% 		{\small \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
+% 		% #2\\
+% 		#2 % Entry description text
+% 	}\\\\}
+
+\newcommand{\publicationalt}[4]{\entry{#1}{#2}{#3}{#4}}
+
+
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
