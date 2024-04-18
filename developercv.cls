@@ -171,7 +171,7 @@
 % Command to output section title headings
 \newcommand{\cvsect}[1]{% The only parameter is the section text
 	\vspace{\baselineskip} % Whitespace before the section title
-	\colorbox{black}{\textcolor{white}{\MakeUppercase{\textbf{#1}}}}\\% Section title
+	\colorbox{black}{\textcolor{white}{{\textbf{#1}}}}\\% Section title
 }
 
 % Command to output section title headings
@@ -203,7 +203,7 @@
 \newcommand{\entry}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
 	\tightspace
 	\parbox[t]{0.15\textwidth}{% 17.5% of the text width of the page
-		#1 % Leftmost entry date(s) text
+		\raggedright #1 % Leftmost entry date(s) text
 	}%
 	&\parbox[t]{0.85\textwidth}{% 82.5% of the text width of the page
 		\textbf{#2}% Entry heading text
@@ -213,12 +213,15 @@
 		#4 % Entry description text
 	}\\\\}
 
-\newcommand{\publication}[3]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
+\newcommand{\publication}[4]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
 	% \parbox[t]{0.175\textwidth}{% 17.5% of the text width of the page
 	% 	#1 % Leftmost entry date(s) text
 	% }%
 	\tightspace
-	\parbox[t]{\textwidth}{% 82.5% of the text width of the page
+	\parbox[t]{0.15\textwidth}{
+		#4
+	}
+	\parbox[t]{0.85\textwidth}{% 82.5% of the text width of the page
 		\textbf{#1}\\% Entry heading text
 		% \hfill% Horizontal whitespace
 		% {\footnotesize \textbf{\textcolor{black}{#2}}}\\% Right-aligned entry qualifier text

@@ -1,5 +1,9 @@
 # Talks and reviews
 
+## Other
+
+* ByteDance patent
+
 ## Talks
 
 * Normalising Flows and Continuously Indexed Flows for Machine Learning, MRC Biostatistics
@@ -12,6 +16,11 @@
 * Normalising Flows and Continuously Indexed Flows for Machine Learning, CoSInES-B4H
   Masterclass on VI, Nov 2023
 * Causal Falsification of Digital Twins, LSE, January 2023
+* Talk for MCMC people (check when)
+* Talk at Imperial, March 2024 - An introduction to categorical probability theory (title
+* Talk at Amazon workshop Berlin, April 2024
+* (Upcoming) talk at UCL, October 2024
+* 
 
 ## Reviews
 
