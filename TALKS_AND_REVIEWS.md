@@ -4,6 +4,11 @@
 
 * ByteDance patent
 
+### TO ADD
+
+* Viva of Geoffrey
+* Viva of Linying
+
 ## Talks
 
 * Normalising Flows and Continuously Indexed Flows for Machine Learning, MRC Biostatistics
@@ -28,4 +33,5 @@
 * Reinforcement Learning in Modern Biostatistics: Constructing Optimal Adaptive Interventions, Statistical Science, 2021/2022
 * An Overview of Off-Policy Evaluation in Reinforcement Learning, Statistical Science, 2022
 * Towards a turnkey approach to unbiased Monte Carlo estimation of smooth functions of estimation, Biometrika, 2024
-* Fritz Bayesian paper, IEEE, 2024
+* Hidden Markov Models and the Bayes Filter in Categorical Probability, IEEE, 2024
+* Adaptive Second-Order Stochastic Optimization, LICS25
