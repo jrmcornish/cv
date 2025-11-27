@@ -8,8 +8,6 @@
 
 * Viva of Geoffrey
 * Viva of Linying
-* NRF fellowship
-* Safeguarded AI TA2 Phase 1 grant
 * AISI grant
 * Cofounder of Proof Relevant
 
