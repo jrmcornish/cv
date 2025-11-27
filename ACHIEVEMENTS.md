@@ -1,4 +1,4 @@
-# Talks and reviews
+# Achievements
 
 ## Other
 
@@ -8,6 +8,10 @@
 
 * Viva of Geoffrey
 * Viva of Linying
+* NRF fellowship
+* Safeguarded AI TA2 Phase 1 grant
+* AISI grant
+* Cofounder of Proof Relevant
 
 ## Talks
 
@@ -28,10 +32,11 @@
 * NTU talk (Stochastic Symmetrisation), July 2024
 * (Upcoming) talk at UCL, October 2024
 
-## Journal Reviews
+## Reviews
 
-* Reinforcement Learning in Modern Biostatistics: Constructing Optimal Adaptive Interventions, Statistical Science, 2021/2022
-* An Overview of Off-Policy Evaluation in Reinforcement Learning, Statistical Science, 2022
-* Towards a turnkey approach to unbiased Monte Carlo estimation of smooth functions of estimation, Biometrika, 2024
-* Hidden Markov Models and the Bayes Filter in Categorical Probability, IEEE, 2024
+* 3x paper, AISTATS 2025 
 * Adaptive Second-Order Stochastic Optimization, LICS25
+* Hidden Markov Models and the Bayes Filter in Categorical Probability, IEEE, 2024
+* Towards a turnkey approach to unbiased Monte Carlo estimation of smooth functions of estimation, Biometrika, 2024
+* An Overview of Off-Policy Evaluation in Reinforcement Learning, Statistical Science, 2022
+* Reinforcement Learning in Modern Biostatistics: Constructing Optimal Adaptive Interventions, Statistical Science, 2021/2022
