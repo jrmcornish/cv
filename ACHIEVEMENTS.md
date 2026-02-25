@@ -32,6 +32,7 @@
 
 ## Reviews
 
+* Category-Equivariant Neural Networks: Foundations and Applications
 * 3x paper, AISTATS 2025 
 * Adaptive Second-Order Stochastic Optimization, LICS25
 * Hidden Markov Models and the Bayes Filter in Categorical Probability, IEEE, 2024
