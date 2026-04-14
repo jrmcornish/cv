@@ -1,0 +1,43 @@
+% Standalone publications document. Sources its content from the
+% single source of truth at ../publications.tex, which is shared with
+% RobCornishCV.tex. The \publication macro is redefined locally below to
+% give a plainer rendering than the one used in the main CV.
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\setlength{\parindent}{0pt}
+
+% Plain rendering: title in bold, then authors, then venue in italics, with
+% the year on the left margin. Each publication becomes one item in a list.
+\newcommand{\publication}[4]{%
+    \item[\textbf{#4}]%
+    \textbf{#1}\\%
+    #2\\%
+    \textit{#3}%
+    \medskip%
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\textbf{Rob Cornish}}\\[2pt]
+    {\large Publications}
+\end{center}
+
+\vspace{1em}
+
+\begin{list}{}{%
+    \setlength{\labelwidth}{3em}%
+    \setlength{\leftmargin}{4em}%
+    \setlength{\itemsep}{0.5em}%
+    \setlength{\parsep}{0pt}%
+}
+    \input{../publications.tex}
+\end{list}
+
+\end{document}
