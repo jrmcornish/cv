@@ -32,6 +32,7 @@
 
 ## Reviews
 
+* 2x paper, ProbML 2026
 * Category-Equivariant Neural Networks: Foundations and Applications
 * 3x paper, AISTATS 2025 
 * Adaptive Second-Order Stochastic Optimization, LICS25
