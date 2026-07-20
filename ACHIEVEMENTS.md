@@ -6,10 +6,13 @@
 
 ### TO ADD
 
+* GCF
+* Thesis of Mohit Prashant ("Probably Approximately Correct Guarantees in Training Safe Reinforcement Learning Policies")
 * Viva of Geoffrey
 * Viva of Linying
 * AISI grant
 * Cofounder of Proof Relevant
+* 2x talks at Andi Wang's workshop (A categorical account of the MH algorithm, and Eilenberg Moore categories of Markov monads)
 
 ## Talks
 
@@ -32,8 +35,9 @@
 
 ## Reviews
 
+* 4x paper, ACL-May 2026
 * 2x paper, ProbML 2026
-* Category-Equivariant Neural Networks: Foundations and Applications
+* LICS 2026 (Category-Equivariant Neural Networks: Foundations and Applications)
 * 3x paper, AISTATS 2025 
 * Adaptive Second-Order Stochastic Optimization, LICS25
 * Hidden Markov Models and the Bayes Filter in Categorical Probability, IEEE, 2024
