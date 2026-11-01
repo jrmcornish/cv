@@ -1,0 +1,9 @@
+# Out-of-source build: auxiliary files go to .build/, the PDF stays here.
+$pdf_mode = 1;
+$aux_dir  = '.build';
+$out_dir  = '.';
+$emulate_aux = 1;
+$pdflatex = 'pdflatex -file-line-error -synctex=1 %O %S';
+$clean_ext = 'synctex.gz run.xml bbl blg pre';
+# Only build the main document when run with no arguments (other .tex files are fragments).
+@default_files = ('RobCornishCV.tex');

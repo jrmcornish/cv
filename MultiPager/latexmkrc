@@ -4,5 +4,6 @@ $aux_dir  = '.build';
 $out_dir  = '.';
 $emulate_aux = 1;
 $pdflatex = 'pdflatex -file-line-error -synctex=1 %O %S';
-# Only clean up what latexmk produced; leave fig/ and resources/ PDFs alone.
 $clean_ext = 'synctex.gz run.xml bbl blg pre';
+# Only build the main document when run with no arguments (other .tex files are fragments).
+@default_files = ('RobCornishCV.tex');
