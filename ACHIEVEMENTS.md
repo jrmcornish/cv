@@ -1,18 +1,18 @@
 # Achievements
 
-## Other
-
-* ByteDance patent
-
 ### TO ADD
 
-* GCF
+* 2x students (Vipul and Will) for GCF2026
 * Thesis of Mohit Prashant ("Probably Approximately Correct Guarantees in Training Safe Reinforcement Learning Policies")
 * Viva of Geoffrey
 * Viva of Linying
 * AISI grant
 * Cofounder of Proof Relevant
 * 2x talks at Andi Wang's workshop (A categorical account of the MH algorithm, and Eilenberg Moore categories of Markov monads)
+
+## Other
+
+* ByteDance patent
 
 ## Talks
 
