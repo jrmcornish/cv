@@ -18,3 +18,6 @@
 *.bcf
 !fig/*.pdf
 *.sw[op]
+
+# Out-of-source build directory (see latexmkrc)
+.build/

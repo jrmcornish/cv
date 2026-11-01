@@ -1,0 +1,2 @@
+# Share the root build config (aux files in .build/, PDF alongside the source).
+do '../latexmkrc';
